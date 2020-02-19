@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Samsung</title>
+    <!-- Bootstrap -->
+    <link href="css/datepicker.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/rest.css" rel="stylesheet">
+  </head>
+  <body>
+<div class="loader"></div>
+<div class="samsung-header text-center">
+	<a href="#" target="_blank"><img src="images/samsung-logo.png"></a>
+</div>
+<div class="header">
+  <img src="images/header.jpg" class="hidden-xs hidden-sm">
+  <img src="images/header_mobile.jpg" class="hidden-lg hidden-md ">
+</div>
+<div class="content">
+	<div class="intro-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-push-1">
+                	<h1 class="text-center">
+                    	Iznenađenje za vas i vaše najmlađe<br>
+                    	<span>Samsung poklanja</span>
+                    </h1>
+					<p class="text-center">Sa nama svi dobijaju!<br><br>
+                    Poklonite sebi novi Samsung Galaxy S8 | S8+ ili Note8<br>
+                    pametni telefon, a vaše najmlađe obradujte
+                    <br><br><img src="images/dexyco.png"><br><br>
+					vaučerom u vrednosti od <strong>12.000</strong> dinara.
+                    <br><img src="images/vaucer.png"><br>
+					<strong>Promocija traje od 16.11. do 10.12.2017.</strong>
+                    </p>
+					<img src="images/shadow.png" class="shadow">
+					<div class="row">
+						<div class="col-md-4 text-center">
+							<img src="images/step1.png">
+							<h4>1. KORAK</h4>
+							<p>Kupite <span class="blueText">Samsung </span>uređaj</p>
+						</div>
+						<div class="col-md-4 text-center">
+							<img src="images/step2.png">
+							<h4>2. KORAK</h4>
+							<p>Registrujte svoj uređaj</p>
+						</div>
+						<div class="col-md-4 text-center">
+							<img src="images/step3.png">
+							<h4>3. KORAK</h4>
+							<p>Iskoristite svoj <span class="redtext">Dexy Co Kids </span>kupon</p>
+						</div>
+					</div>
+                    <a href="#" class="btn btn-default btn-lg center-block" target="_blank">ODREDBE I USLOVI</a>
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="registration-section">
+  	<div class="container">
+  		<h1 class="text-center">Registracija</h1>
+        	<form id="registration">
+        	<div class="row">
+            	<div class="col-md-8 col-md-push-2">
+               		<div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="first_name" placeholder="Ime">
+                      </div>
+                    </div>
+               		<div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="last_name" placeholder="Prezime">
+                      </div>
+                    </div>
+               		<div class="col-md-6">
+                      <div class="form-group">
+                        <input type="email" class="form-control" name="email" placeholder="Adresa e-pošte">
+                      </div>
+                    </div>
+               		<div class="col-md-6">
+                      <div class="form-group">
+                        <input type="email" class="form-control" name="emailConf" placeholder="Potvrdite adresu e-pošte">
+                      </div>
+                    </div>
+               		<div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="address" placeholder="Adresa">
+                      </div>
+                    </div>
+               		<div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="city" placeholder="Grad">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="postal_code" placeholder="Poštanski broj">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="phone" placeholder="Broj telefona">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                      	<div class="select-hold">
+                      	<select name="device" class="form-control">
+							<option value="">Uređaj</option>
+							<option value="Samsung Galaxy S8">Samsung Galaxy S8</option>
+							<option value="Samsung Galaxy S8+">Samsung Galaxy S8+</option>
+							<option value="Samsung Note 8">Samsung Note 8</option>
+						</select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="imei" placeholder="IMEI">
+                        <input type="hidden" name="serial_number" value="0">
+                        <input type="hidden" class="form-control" name="model" value="0">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                      	<div class="select-file" id="trigger_bill"><span>Priložite račun ili ugovor</span></div>
+                        <input type="file" class="form-control" id="select_bill" name="select_bill">
+                        <input type="hidden" name="bill" class="bill_input">
+                        <input type="hidden" name="extension" class="bill_extension">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group form-group-date">
+						<div class="input-group input-append date" id="datePicker">
+						<input type="text" class="form-control" name="purchase_date" readonly>
+						<span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
+						</div>
+                      </div>
+                    </div><div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="purchase_place" placeholder="Mesto kupovine">
+                      </div>
+                    </div>
+					<div class="clearfix"></div>
+					<div class="col-md-12">
+                	<div class="checkbox">
+					  <div class="check-hold"><input type="checkbox" name="newsletter" value="1"></div><label>Želite li da primate dodatne informacije od kompanije Samsung?</label>
+					</div>
+					<div class="checkbox">
+						<div class="check-hold"><input type="checkbox" name="terms" value="terms-and-conditions"></div><label>Prihvatam odredbe i uslove</label>
+					</div>
+					<p>Pritiskom na polje „Registrujte se“ dajem kompaniji Samsung Electronics Austria GmbH, njenom lokalnom ogranku i podizvođačima svoju izričitu saglasnost da moje gore navedene lične podatke prikuplja putem ove elektronske platforme i koristi radi moje registracije kupljenog uređaja i za svrhu kontaktiranja u vezi sa svim prethodno navedenim. Upoznat/a sam sa Samsung-ovom Politikom privatnosti koja je dostupna na: <a href="http://www.samsung.com/rs/info/privacy.html" target="_blank">http://www.samsung.com/rs/info/privacy.html</a> i dajem svoju saglasnost da Samsung moje lične podatke može koristi u skladu sa istom. Svestan sam činjenice da je uslov ostvarivanja prava na vaučer uspešno okončan postupak registracije uređaja, te u tom smislu shvatam neophodnost unošenja ličnih podataka za čiju obradu dajem saglasnost. </p>
+                    <div class="clearfix"></div>
+                	</div>
+            	</div>
+            </div>
+            <div class="col-md-12">
+ 				<button type="sumbit" class="btn btn-default btn-lg center-block">Registrujte se</button>
+            </div>
+  		</form>
+    </div>
+</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="thankModal" tabindex="-1" role="dialog" aria-labelledby="thankModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title text-center" id="thankModalLabel">Uspešno</h4>
+      </div>
+      <div class="modal-body">
+        <p class="text-center">Uspešno ste se registrovali.<br>
+        Molimo vas da sačekate kako bismo izvršili validaciju vaših podataka.<br>
+        Ukoliko vaša prijava bude validna, obavestićemo vas e-mail porukom.
+        </p>
+        <button type="button" class="btn btn-default center-block" data-dismiss="modal">U redu</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	  <script src="js/validation.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
